@@ -52,6 +52,9 @@
 .nt-pic-rt{
 	float: left;
 } */
+.nt-pic{
+	float: left;
+}
 .nt-detail-mg{
 	border-top: 1px solid #ccc;
 	padding: 10px 0;
@@ -61,7 +64,6 @@
 	height: 50px;
 	border-radius: 50%;
 	border: 0;
-		float: left;
 	margin-right: 20px;
 }
 .nt-pic-rt{
@@ -69,7 +71,122 @@
 	position: relative;
 	overflow: hidden;
 }
+.nt-pic-rt-cont{
+	position: relative;
+}
+.nt-pic-cont-top{
+	margin-right: 50px;
+}
+.u-keshi{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.nt-pic-cont-ml{
+	overflow: hidden;
+	position: relative;
+	height: 36px;
+	line-height: 18px;
+	margin: 10px 0;
+}
+.nt-pic-cont-ml .u-note{
+	font-size: 14px;
+}
+.nt-pic-cont-ml .zhankai {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    width: 60px;
+    text-align: center;
+    background-image: -webkit-linear-gradient(right, rgba(255,255,255,1) 0,rgba(255,255,255,.5) 40%,rgba(255,255,255,.2) 100%);
+    background-image: -moz-linear-gradient(left, rgba(255,255,255,.1) 0,rgba(255,255,255,.5) 40%,rgba(255,255,255,.1) 100%);
+    background-image: linear-gradient(right, rgba(255,255,255,1) 0,rgba(255,255,255,.5) 40%,rgba(255,255,255,.2) 100%);
+}
+.bt-left{
+	float: left;
+}
+.dt-hide,
+.ed-hide,
+.date-time-hide{
+	display: none;
+}
+.hd-show{
+	display: block;
+}
+.bt-right{
+	float: right;
+}
+.bt-right ul li{
+	float: left;
+	padding: 2px 5px;
+	margin-left: 4px;
+}
+.share-items{
+	position: absolute;
+}
 /*笔记详情结束*/
+/*笔记评论部分开始*/
+.comment-cont{
+/*	border: 1px solid #ccc;*/
+	margin-left: 80px;
+}
+.comment-pool{
+	border: 1px solid #ccc;
+	padding-right: 10px;
+	padding: 5px 10px 5px 10px;
+	margin-top: 10px;
+}
 
+
+.comment-pool-list{
+	padding-left: 40px;
+	position: relative;
+}
+.comment-pool-list img{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.comment-cont-dt h4{
+	float: left;
+}
+.delete-and-jubao{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.comment-pool-list img{
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+
+}
+.comment-type{
+	margin-top: 20px;
+	position: relative;
+}
+.edittxt{
+	width: 100%;
+	height: 50px;
+	line-height: 16px;
+	resize: none;
+	padding: 5px;
+	color: #999;
+}
+.edittxt-tip{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	color: #999;
+}
+.comment-btn{
+	text-align: right;
+}
+.comment-btn a{
+	display: inline-block;
+	padding: 5px 10px;
+}
+/*笔记评论部分结束*/
 
 
