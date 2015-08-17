@@ -1,0 +1,75 @@
+.nt-nav-bd {
+    border: 1px solid #ccc;
+}
+.note-nav{
+	margin-bottom: 10px;
+}
+
+.note-nav > h2{
+	max-width: 70px;
+	position: relative;
+}
+.note-nav-sort .ns-choose,
+.note-nav-sort .ns-hot{
+	position: absolute;
+}
+.note-nav-sort .ns-choose{
+	left: 85px;
+	top: 5px;
+}
+.note-nav-sort .ns-hot{
+	right: 0;
+	top: 0;
+}
+.ns-choose a,
+.ns-hot {
+	padding: 3px 5px;
+}
+.ns-choose-detail-bd{
+	margin: 20px 0;
+	display: none;
+}
+.ns-choose-detail-cont a{
+	background-color: #ccc;
+    border: none;
+    text-decoration: none!important;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    padding: 0px 12px;
+    margin-right: 9px;
+    margin-bottom: 10px;
+}
+.ns-choose-detail-cont .act{
+	background-color: #36E2A1;
+}
+
+/*笔记详情开始*/
+.nt-dt-cont{
+	overflow: hidden;
+}
+/* .nt-pic,
+.nt-pic-rt{
+	float: left;
+} */
+.nt-detail-mg{
+	border-top: 1px solid #ccc;
+	padding: 10px 0;
+}
+.nt-pic img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 0;
+		float: left;
+	margin-right: 20px;
+}
+.nt-pic-rt{
+	/*float: left;*/
+	position: relative;
+	overflow: hidden;
+}
+/*笔记详情结束*/
+
+
+
