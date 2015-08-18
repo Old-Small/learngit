@@ -1,3 +1,11 @@
+a:focus,input{
+	outline:none;
+}
+.btn{
+	background-color: #39B5EE;
+	border: 0;
+	padding: 3px 5px
+}
 .nt-nav-bd {
     border: 1px solid #ccc;
 }
@@ -92,16 +100,20 @@
 .nt-pic-cont-ml .u-note{
 	font-size: 14px;
 }
+.zhankai,
+.shouqi{
+	display: none;
+}
 .nt-pic-cont-ml .zhankai {
     position: absolute;
     right: 0;
     bottom: 0;
-    background-color: #fff;
+    /*background-color: #fff;*/
     width: 60px;
     text-align: center;
-    background-image: -webkit-linear-gradient(right, rgba(255,255,255,1) 0,rgba(255,255,255,.5) 40%,rgba(255,255,255,.2) 100%);
-    background-image: -moz-linear-gradient(left, rgba(255,255,255,.1) 0,rgba(255,255,255,.5) 40%,rgba(255,255,255,.1) 100%);
-    background-image: linear-gradient(right, rgba(255,255,255,1) 0,rgba(255,255,255,.5) 40%,rgba(255,255,255,.2) 100%);
+    background-image: -webkit-linear-gradient(left, rgba(255,255,255,.8) 0,rgba(255,255,255,1) 40%,rgba(255,255,255,1) 100%);
+    background-image: -moz-linear-gradient(left, rgba(255,255,255,.8) 0,rgba(255,255,255,1) 40%,rgba(255,255,255,1) 100%);
+    background-image: linear-gradient(left, rgba(255,255,255,.8) 0,rgba(255,255,255,1) 40%,rgba(255,255,255,1) 100%);
 }
 .bt-left{
 	float: left;
@@ -136,6 +148,7 @@
 	padding-right: 10px;
 	padding: 5px 10px 5px 10px;
 	margin-top: 10px;
+	/* display: none; */
 }
 
 
@@ -149,12 +162,18 @@
 	left: 0;
 }
 .comment-cont-dt h4{
-	float: left;
+	display: inline-block;
 }
 .delete-and-jubao{
 	position: absolute;
 	top: 0;
 	right: 0;
+	display: none;
+	cursor: pointer;
+}
+.comment-cont-word{
+	margin: 10px 0;
+	border-bottom: 1px solid #ccc;
 }
 .comment-pool-list img{
 	width: 30px;
@@ -186,7 +205,101 @@
 .comment-btn a{
 	display: inline-block;
 	padding: 5px 10px;
+	color: #000;
 }
 /*笔记评论部分结束*/
 
+/*弹窗开始*/
+.dialog,.dialog-bg{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	display: none;
+}
+.dialog-bg{
+	background-color: #3b3b3b;
+	opacity: .75;
+	z-index: 1000;
+	/*animation: change 1s ;*/
 
+}
+.dialog-cont{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: 200px;
+	margin-left: -200px;
+	margin-top: -100px;
+	z-index: 10001;
+	background-color: #fff;
+	padding: 10px;
+	font-size: 20px;
+	animation: change 1s ;
+}
+.dialog-cont 
+.dialog-body{
+    height: 100px;
+    text-indent: 2em;
+}
+.dialog-footer{
+	text-align: right;
+}
+.dialog-footer a{
+	display: inline-block;
+	padding: 5px 10px;
+	margin-left: 10px;
+	background-color: #A3E1F6;
+}
+.dialog-footer a:hover{
+	background-color: #7CD4F2;
+}
+@-webkit-keyframes change{
+	0 {
+		opacity: 0;
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	}
+	100% {
+		opacity: 0.75;
+		 -webkit-transform: scale(1);
+		transform: scale(1); 
+	}
+}
+/*弹窗结束*/
+
+
+
+/**
+ *
+ *  page-introduce
+ *
+ **/
+.page2-cont{
+	width: 70%;
+	border: 1px solid #ccc;
+}
+.page2-wrap{
+	padding: 10px;
+}
+.page2-wrap h2{
+	font-size: 22px;
+	font-weight: 400;
+}
+.p2-wrap-header,
+.p2-goal,
+.p2-fit,
+.p2-absrtact{
+	margin-bottom: 20px;
+}
+.p2-txt{
+	text-indent: 1em;
+	font-size: 14px;
+}
+.page2-wrap b{
+	font-size: 18px;
+	font-weight: 500;
+	color: #444;
+}
