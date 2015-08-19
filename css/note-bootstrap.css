@@ -1,10 +1,10 @@
-/* @font-face {
+@font-face {
 	font-family: 'icomoon';
-	src:url('../font/icomoon/icomoon.eot');
-	src:url('../font/icomoon/icomoon.eot') format('eot'),
-		url('../font/icomoon/icomoon.ttf') format('truetype'),
-		url('../font/icomoon/icomoon.woff') format('woff'),
-		url('../font/icomoon/icomoon.svg') format('svg');
+	src:url('font/icomoon/icomoon.eot?jqm7fj');
+	src:url('font/icomoon/icomoon.eot?#iefixjqm7fj') format('eot'),
+		url('font/icomoon/icomoon.ttf?jqm7fj') format('truetype'),
+		url('font/icomoon/icomoon.woff?jqm7fj') format('woff'),
+		url('font/icomoon/icomoon.svg?jqm7fj#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -17,10 +17,10 @@
 	text-transform: none;
 	line-height: 1;
 
-	Better Font Rendering ===========
+	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-} */
+}
 
 .icon-share2:before {
 	content: "\e604";
@@ -38,46 +38,24 @@
 	content: "\e602";
 }
 
-*{
-	box-sizing: border-box;
-}
 a:focus,input{
 	outline:none;
 }
 .btn{
 	background-color: #39B5EE;
 	border: 0;
-	padding: 2px 8px
-}
-.btn:hover {
-    opacity: 0.7;
-    color: rgb(22, 25, 26);
-    background-color: #39B5EE;
-}
-.row,{
-	width: 980px;
-}
-
-.col-sm-4,.nt-nav-bd{
-	float: left;
+	padding: 3px 5px
 }
 .nt-nav-bd {
-    width: 70%;
-    padding: 10px;
     border: 1px solid #ccc;
 }
-.col-sm-4{
-	width: 30%;
-}
-
 .note-nav{
 	margin-bottom: 10px;
-	position: relative;
 }
 
 .note-nav > h2{
 	max-width: 70px;
-	/*position: relative;*/
+	position: relative;
 }
 .note-nav-sort .ns-choose,
 .note-nav-sort .ns-hot{
@@ -100,7 +78,7 @@ a:focus,input{
 	display: none;
 }
 .ns-choose-detail-cont a{
-    background-color: #A0DEC7;
+	background-color: #ccc;
     border: none;
     text-decoration: none!important;
     height: 22px;
@@ -109,7 +87,6 @@ a:focus,input{
     padding: 0px 12px;
     margin-right: 9px;
     margin-bottom: 10px;
-    color: #F8F8F8;
 }
 .ns-choose-detail-cont .act{
 	background-color: #36E2A1;
@@ -178,15 +155,8 @@ a:focus,input{
     background-image: -moz-linear-gradient(left, rgba(255,255,255,.8) 0,rgba(255,255,255,1) 40%,rgba(255,255,255,1) 100%);
     background-image: linear-gradient(left, rgba(255,255,255,.8) 0,rgba(255,255,255,1) 40%,rgba(255,255,255,1) 100%);
 }
-.nt-pic-cont-top .u-name{
-	 font-size: 16px;
-    color: #5AA05A;
-}
 .bt-left{
 	float: left;
-}
-.nt-pic-cont-bt{
-	font-size: 12px;
 }
 .dt-hide,
 .ed-hide,
@@ -204,14 +174,8 @@ a:focus,input{
 	padding: 2px 5px;
 	margin-left: 4px;
 }
-.f-btn{
-	font-size: 12px;
-}
 .share-items{
 	position: absolute;
-	right: 0;
-	width: 200px;
-	display: block;
 }
 /*笔记详情结束*/
 /*笔记评论部分开始*/
@@ -239,12 +203,6 @@ a:focus,input{
 }
 .comment-cont-dt h4{
 	display: inline-block;
-	color: #5AA05A;
-	font-weight: 400;
-	font-size: 14px;
-}
-.comment-cont-dt span{
-	font-size: 12px;
 }
 .delete-and-jubao{
 	position: absolute;
@@ -252,12 +210,10 @@ a:focus,input{
 	right: 0;
 	display: none;
 	cursor: pointer;
-	font-size: 12px;
 }
 .comment-cont-word{
 	margin: 10px 0;
 	border-bottom: 1px solid #ccc;
-	font-size: 13px;
 }
 .comment-pool-list img{
 	width: 30px;
@@ -288,7 +244,8 @@ a:focus,input{
 }
 .comment-btn a{
 	display: inline-block;
-	padding: 2px 8px;
+	padding: 5px 10px;
+	color: #000;
 }
 /*笔记评论部分结束*/
 
