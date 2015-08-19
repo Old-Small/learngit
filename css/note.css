@@ -108,12 +108,29 @@ a:focus,input{
     position: absolute;
     right: 0;
     bottom: 0;
+<<<<<<< HEAD
     /*background-color: #fff;*/
+=======
+>>>>>>> dddc803e2e857264c64e278cf128d2a17c7519b3
     width: 60px;
+    background-color: rgba(255,255,255,.5)\9;
+    opacity: .9\9;
     text-align: center;
+<<<<<<< HEAD
     background-image: -webkit-linear-gradient(left, rgba(255,255,255,.8) 0,rgba(255,255,255,1) 40%,rgba(255,255,255,1) 100%);
     background-image: -moz-linear-gradient(left, rgba(255,255,255,.8) 0,rgba(255,255,255,1) 40%,rgba(255,255,255,1) 100%);
     background-image: linear-gradient(left, rgba(255,255,255,.8) 0,rgba(255,255,255,1) 40%,rgba(255,255,255,1) 100%);
+=======
+    background-image: -webkit-linear-gradient(left, rgba(255,255,255,.9) 0,rgba(255,255,255,1) 40%,rgba(255,255,255,1) 100%);
+    background-image: -moz-linear-gradient(left, rgba(255,255,255,.9) 0,rgba(255,255,255,1) 40%,rgba(255,255,255,1) 100%);
+    background-image: linear-gradient(left, rgba(255,255,255,.9) 0,rgba(255,255,255,1) 40%,rgba(255,255,255,1) 100%);
+    /*filter:alpha(opacity=100 finishopacity=100 style = 1 startx =0, starty =0,finishx =100,finishy=100);*/
+
+}
+:root .nt-pic-cont-ml .zhankai;{
+	background-color: #fff\9;
+	opacity: .9\9;
+>>>>>>> dddc803e2e857264c64e278cf128d2a17c7519b3
 }
 .bt-left{
 	float: left;
@@ -164,6 +181,7 @@ a:focus,input{
 .comment-cont-dt h4{
 	display: inline-block;
 }
+
 .delete-and-jubao{
 	position: absolute;
 	top: 0;
@@ -174,6 +192,10 @@ a:focus,input{
 .comment-cont-word{
 	margin: 10px 0;
 	border-bottom: 1px solid #ccc;
+}
+.comment-word{
+	margin-top: 10px;
+	font-size: 14px;
 }
 .comment-pool-list img{
 	width: 30px;
