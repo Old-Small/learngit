@@ -1,42 +1,3 @@
-/* @font-face {
-	font-family: 'icomoon';
-	src:url('../font/icomoon/icomoon.eot');
-	src:url('../font/icomoon/icomoon.eot') format('eot'),
-		url('../font/icomoon/icomoon.ttf') format('truetype'),
-		url('../font/icomoon/icomoon.woff') format('woff'),
-		url('../font/icomoon/icomoon.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-[class^="icon-"], [class*=" icon-"] {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-
-	Better Font Rendering ===========
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-} */
-
-.icon-share2:before {
-	content: "\e604";
-}
-.icon-share:before {
-	content: "\e603";
-}
-.icon-chat:before {
-	content: "\e600";
-}
-.icon-thumbs-up:before {
-	content: "\e601";
-}
-.icon-star-empty:before {
-	content: "\e602";
-}
 
 *{
 	box-sizing: border-box;
@@ -64,7 +25,7 @@ a:focus,input{
 .nt-nav-bd {
     width: 70%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #E4E5E7;
 }
 .col-sm-4{
 	width: 30%;
@@ -127,7 +88,7 @@ a:focus,input{
 	float: left;
 }
 .nt-detail-mg{
-	border-top: 1px solid #ccc;
+	border-top: 1px solid #E4E5E7;
 	padding: 10px 0;
 }
 .nt-pic img{
@@ -216,11 +177,11 @@ a:focus,input{
 /*笔记详情结束*/
 /*笔记评论部分开始*/
 .comment-cont{
-/*	border: 1px solid #ccc;*/
+/*	border: 1px solid #E4E5E7;*/
 	margin-left: 80px;
 }
 .comment-pool{
-	border: 1px solid #ccc;
+	border: 1px solid #E4E5E7;
 	padding-right: 10px;
 	padding: 5px 10px 5px 10px;
 	margin-top: 10px;
@@ -256,7 +217,7 @@ a:focus,input{
 }
 .comment-cont-word{
 	margin: 10px 0;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #E4E5E7;
 	font-size: 13px;
 }
 .comment-pool-list img{
@@ -276,15 +237,18 @@ a:focus,input{
 	resize: none;
 	padding: 5px;
 	color: #999;
+		border: 1px solid #E4E5E7;
 }
 .edittxt-tip{
 	position: absolute;
 	top: 5px;
 	left: 5px;
 	color: #999;
+	font-size: 12px;
 }
 .comment-btn{
 	text-align: right;
+	margin-top: 2px;
 }
 .comment-btn a{
 	display: inline-block;
@@ -362,7 +326,7 @@ a:focus,input{
  **/
 .page2-cont{
 	width: 70%;
-	border: 1px solid #ccc;
+	border: 1px solid #E4E5E7;
 }
 .page2-wrap{
 	padding: 10px;
@@ -386,3 +350,180 @@ a:focus,input{
 	font-weight: 500;
 	color: #444;
 }
+
+/*学员列表开始*/
+
+.left-box{
+	overflow: hidden;/*清除浮动用*/
+}
+
+.std-list,
+.std-lit-dt,
+.u-learning,
+.u-following,
+.u-follower{
+	box-sizing: border-box;
+}
+
+
+.main-box, .left-box, .right-box{
+	border: 1px solid #CED8DC!important;
+}
+.std-list{
+	margin: 20px 7px;
+	overflow: hidden;
+	font-size: 12px;
+}
+.std-lit-dt{
+	margin-bottom: 50px;
+	padding: 4px;
+	margin-left:24px;
+	width: 133px;
+	height: 190px;
+	border: 1px solid #ccc;
+	position: relative;
+	float: left;
+	overflow: hidden;
+}
+.std-pic{
+	width: 100%;
+	height: 80px;
+}
+.std-pic img{
+	width: 98px;
+	height: 60px;
+	position: absolute;
+	top: 13px;
+	left: 50%;
+	margin-left: -49px;
+	transition: all .5s ease;
+	border-radius: 4px;
+}
+img.img-hover{
+	width: 100%;
+	top: 0;
+	margin-left: -50%;
+}
+.std-mask a{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 16px;
+	width: 80px;
+	height: 26px;
+	line-height: 26px;
+	opacity: 0.1;
+	transition: opacity .5s, transform.5s;
+}
+a.a-hover{
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	-moz-transform: scale(1);
+	transform: scale(1);
+}
+.std-mask a.std-btn {
+    color: #fff;
+    background-color: #39B5EE;
+    text-align: center;
+    font-size: 14px;
+
+}
+
+.std-mask .btn-add{
+	margin-top: -31px;
+	margin-left: -40px;
+}
+.std-mask .btn-visit{
+	margin-top: 5px;
+	margin-left: -40px;
+}
+.std-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*display: none;*/
+    visibility: hidden;
+    /*background-color: #fff;*/
+    transition : all .5s ease;
+    -webkit-transition:  all .5s ease;
+}
+.std-lit-dt:before{
+	content: '';
+	display: block;
+	background: url(../img/shadow-left.png) no-repeat;
+	position: absolute;
+	left: -21px;
+	bottom: -7px;
+	width: 80px;
+	height: 10px;
+}
+.std-lit-dt:after{
+	content: '';
+	display: block;
+	background: url(../img/shadow-right.png) no-repeat;
+	position: absolute;
+	right: -1px;
+	bottom: -7px;
+	width: 80px;
+	height: 10px;
+}
+.std-hover-show{
+	/*display: block;*/
+	visibility: visible;
+	background-color: rgba(0,0,0,.4);
+	/* width: 100%;
+	height: 100%; */
+    
+}
+.other-msg>div {
+    float: left;
+    width: 41px;
+    text-align: center;
+ }
+.u-learning span,
+.u-following span,
+.u-follower span{
+	display: block;
+}
+.u-following{
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+.std-page-choose{
+	float: right;
+	margin-bottom: 10px;
+}
+.std-page-choose >a {
+	float: left;
+	display: inline-block;
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	margin-left: 5px;
+	background-color: #E0E0E0;
+	text-align: center;
+	text-decoration: none!important;
+}
+.std-page-choose >.page-num{
+	color: #CCCACA;
+}
+.std-page-choose >.page-num:hover{
+	background-color: #3ABBB7;
+	font-size: 24px;
+	transition: all .2s ease-in;
+}
+.pre-btn.fontszie,
+.nxt-btn.fontszie{
+	font-size: 24px;
+}
+.pre-btn.act,/*能够进行下一页或者上一页下操作时添加.act类*/
+.nxt-btn.act{
+	background-color: #9EE4E2;
+	color: #5f93d3;
+}
+
+/*学员列表结束*/
