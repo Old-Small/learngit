@@ -96,7 +96,8 @@ a,a:hover{color:#333;}
 	position: relative;
 }
 .course-type li{
-	display: inline-block;
+	/*display: inline-block;*//*li标签之间会有空隙*/
+	float: left;
 }
 
 .course-cont{
@@ -207,19 +208,22 @@ a,a:hover{color:#333;}
 	background-color: #6AEE2E;
 }
 .course-type li{
-	padding:0 30px;
+	padding: 5px 0px;
 	cursor: pointer;
+	border-radius: 13px;
+	width: 102px;
+	text-align: center;
 }
 .course-type li:hover{
-
+	
 }
 .bordr-line{
     position: absolute;
-    width: 103px;
+    width: 102px;
     height: 2px;
     background-color: #6AEE2E;
     bottom: 1px;
-    left: 0;
+    left: 0px;
 }
 .bordr-line:after{
 	content: "";

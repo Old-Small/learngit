@@ -41,13 +41,42 @@ $(function(){
 	});
 	
 	//菜单切换
+	$('.course-type li').hover(function(){
+		var liIndex = $(this).index();
+		var newLine = $('<div class="bordr-line"></div>');
+		var newLineLeft = $('.course-type li').eq(0).width();
+		var newLineLeftPadding = $('.course-type li');
+		// alert(newLineLeft);
+		$('.course-type').children('.bordr-line').remove();
+		$('.course-type').append(newLine);
+		$('.bordr-line').css({
+			"left": newLineLeft * liIndex + "px"
+		});
+		if ($(this).hasClass('course-item-bgc')) {
+			$('.bordr-line').css({
+				"bottom":"1px",
+				"-webkit-transition":"bottom .2s ease",
+				"transition":"bottom .2s ease"
+			});
+			return ;
+		}else{
+			$(this).addClass('course-item-bgc').siblings().removeClass('course-item-bgc');
+			$('.bordr-line').css({
+				"bottom":"-10px",
+				"-webkit-transition":"bottom .2s ease",
+				"transition":"bottom .2s ease"
+			});
+		}
+	});
 	
+
+
 	function newBorder(newLine){
 		newLine = $('<div class="new-border"></div>');
 	}
 	$('.course-type li').hover(function(L){
 		var thisLiId = $('#course-item' + $(this).index()+ 1);
-		
+		$(this).addClass()
 	});
 
 });
