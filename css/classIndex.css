@@ -50,7 +50,13 @@ a,a:hover{color:#333;}
 	width: 980px;
 	height: 420px;
 }
-.tab-icon{
+/* .tab-icon{
+	position: absolute;
+	left: 50%;
+	bottom: 50px;
+	margin-left: -60px;
+} */
+.dots{  /*插件自动生成*/
 	position: absolute;
 	left: 50%;
 	bottom: 50px;
@@ -72,7 +78,11 @@ a,a:hover{color:#333;}
 	margin-top: -40px;
 	right: -40px;
 }
-.banner .tab-icon li{
+/* .banner .tab-icon>a{
+	float: left;
+	margin-left: 10px;
+} */
+.banner .dots>li{/*插件自动生成*/
 	float: left;
 	margin-left: 10px;
 }
@@ -119,6 +129,17 @@ a,a:hover{color:#333;}
 	position: relative;
 	overflow: hidden;
 }
+.course-info:hover{
+	background-color: #E7F4F0;
+}
+.hot-and-newest a{
+	padding: 5px 8px;
+	display: inline-block;
+	border-radius: 10px;
+}
+.hot-and-newest a.bgc-change{
+	background-color: #6AEE2E;
+}
 .cs-info-img img{
 	width: 100%;
 	height: 123px;
@@ -127,22 +148,25 @@ a,a:hover{color:#333;}
 
 }
 .cs-info-img .play-icon{
-	    background: url(../icon/player-icon.png) no-repeat;
-	    width: 40px;
-	    height: 40px;
-	    position: absolute;
-	    top: 50%;
-	    left: 50%;
-	    background-size: 40px;
-	    margin-top: -20px;
-	    margin-left: -20px;
-	    display: none;
-	    cursor: pointer;
+    background: url(../icon/player-icon.png) no-repeat;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-size: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+    display: none;
+    cursor: pointer;
 }
 .cs-info-img .free-label{
 	position: absolute;
 	top: 0px;
 	right: 5px;
+	background-color: #35B558;
+	color: #C2D9B9;
+	padding: 2px;
 }
 .course-title{
 	margin: 10px 0;
@@ -155,7 +179,7 @@ a,a:hover{color:#333;}
 .course-relative{
 	overflow: hidden;
 	zoom: 1;
-	margin: 10px 0;
+	/*margin: 10px 0;*/
 }
 .course-duration{
 	float: left;
@@ -175,17 +199,17 @@ a,a:hover{color:#333;}
 	width: 100%;
 	height: 420px;/*全部显示货值部分显示*/
 }
-.banner .tab-icon li{
+.banner .dots>li{
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
 	background-color: #abc;
 	cursor: pointer;
 }
-.tab-icon li:hover{
+.dots li:hover{
 	/*background-color: #f60;*/
 }
-.banner .tab-icon .curr{
+.banner .dots .active{
 	background: #f60;
 }
 .banner-cont .left-btn{
@@ -236,9 +260,7 @@ a,a:hover{color:#333;}
 	margin-left: -3px;
 	bottom: 100%;
 }
-.bordr-line:hover{
 
-}
 .course-title{
 	font-size: 14px;
 	font-weight: 500;
@@ -266,7 +288,7 @@ a,a:hover{color:#333;}
 	display: none;
 }
 .choose-more{
-	margin: 10px 0;
+	/*margin: 5px 0;*/
 	display: none;
 }
 .course-need-pay{
