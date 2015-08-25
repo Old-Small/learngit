@@ -1,0 +1,467 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta property="qc:admins" content="147147623262164525346367">
+	<meta property="wb:webmaster" content="0766680cb5bd4655">
+    <link href="/img/icon/site.ico" rel="icon" type="image/x-icon">
+    <link href="/img/icon/site.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/img/icon/site.png" rel="apple-touch-icon">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    	<meta name="keywords" content="课堂,信息图,数据可视化,信息可视化,数据分析,大数据,信息图定制,信息图研究,知识分享,研究,兴趣">
+<meta name="description" content="课堂管理,课时管理,研趣十分钟课堂">
+<link rel="stylesheet" type="text/css" href="css/course.css">
+<link rel="stylesheet" type="text/css" href="css/courseAdmin.css">
+<link rel="stylesheet" type="text/css" href="css/icomoon/style.css">
+<link rel="stylesheet" type="text/css" href="css/gridview/styles.css">
+<link rel="stylesheet" type="text/css" href="css/gridview/pager.css">
+<link rel="stylesheet" type="text/css" href="css/plugin/magnific-popup/magnific.css">
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="/assets/67ce4e63/jquery.ba-bbq.js"></script>
+<script type="text/javascript" src="js/jquery-ui.-soatable.js"></script>
+<title>课时管理 - 研趣网十分钟课堂</title>
+	<script type="text/javascript" src="js/common.js"></script>
+<style type="text/css">#yddContainer{display:block;font-family:Microsoft YaHei;position:relative;width:100%;height:100%;top:-4px;left:-4px;font-size:12px;border:1px solid}#yddTop{display:block;height:22px}#yddTopBorderlr{display:block;position:static;height:17px;padding:2px 28px;line-height:17px;font-size:12px;color:#5079bb;font-weight:bold;border-style:none solid;border-width:1px}#yddTopBorderlr .ydd-sp{position:absolute;top:2px;height:0;overflow:hidden}.ydd-icon{left:5px;width:17px;padding:0px 0px 0px 0px;padding-top:17px;background-position:-16px -44px}.ydd-close{right:5px;width:16px;padding-top:16px;background-position:left -44px}#yddKeyTitle{float:left;text-decoration:none}#yddMiddle{display:block;margin-bottom:10px}.ydd-tabs{display:block;margin:5px 0;padding:0 5px;height:18px;border-bottom:1px solid}.ydd-tab{display:block;float:left;height:18px;margin:0 5px -1px 0;padding:0 4px;line-height:18px;border:1px solid;border-bottom:none}.ydd-trans-container{display:block;line-height:160%}.ydd-trans-container a{text-decoration:none;}#yddBottom{position:absolute;bottom:0;left:0;width:100%;height:22px;line-height:22px;overflow:hidden;background-position:left -22px}.ydd-padding010{padding:0 10px}#yddWrapper{color:#252525;z-index:10001;background:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ab20.png);}#yddContainer{background:#fff;border-color:#4b7598}#yddTopBorderlr{border-color:#f0f8fc}#yddWrapper .ydd-sp{background-image:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ydd-sprite.png)}#yddWrapper a,#yddWrapper a:hover,#yddWrapper a:visited{color:#50799b}#yddWrapper .ydd-tabs{color:#959595}.ydd-tabs,.ydd-tab{background:#fff;border-color:#d5e7f3}#yddBottom{color:#363636}#yddWrapper{min-width:250px;max-width:400px;}</style><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+
+<body>
+<!--防止另存为 无效-->
+<noscript>
+&lt;iframe src="*.html"&gt;&lt;/iframe&gt;
+</noscript>
+
+<div id="contents" class="contents">
+
+
+<div id="header1">
+    <div class="wrapper auto-width" style="width: 1262px;">
+        <div class="head-menu-search">
+<!--			<a id="logo" href="/">研趣网</a>-->
+			<a id="logo" href="/" style="width: 150px" title="研趣网"><img src="/img/icon/logo-4.png"> </a>
+            <div id="navbar">
+                <a href="/">发现</a>
+                <a href="/today/index">今日精选</a>
+                <a href="/site/circle">圈子</a>
+                <a href="/site/board">热门黑板</a>
+				<!--a   href="/site/course">十分钟课堂</a-->
+                <!--a   href="/hot">时事热点</a-->
+
+                <div class="search-wrap hidden">
+                    <form method="get" action="/" name="q-search" id="q-search">
+                    <input id="quick-search" name="q" type="text" autocomplete="off" placeholder="搜索图表" class="q-s-i">
+                    <a class="icon-search-wrap"><i class="icon-search"></i></a>
+                    </form>
+                </div>
+                
+            	<a class="search-toggle" title="搜索"><i class="icon-search"></i></a>
+                <a class="a-wx" href="#" title="微信二维码"> <i class="icon-wx">&nbsp;</i>
+                	<div class="wx-code hidden">
+                    <img src="/img/icon/wx-code-170.jpg" alt="微信二维码">
+                    </div>
+                </a>
+                <a class="a-wb" href="http://weibo.com/u/5254083469" target="_blank" title="微博"><i class="icon-wb">&nbsp;</i>&nbsp;</a>
+            </div>
+        </div>
+        					<ul id="user-info">
+            <li id="i">
+            	<span class="user-hover">
+                	<img src="/img/user/head/default/h/head.png" alt="陈俊的头像">
+                    <b>陈俊</b><i class="icon-drop"></i>
+                </span>
+				<div class="user-pop-wrap">
+					<span class="pop-head-top"><i class="icon-top"></i></span>
+					<div class="user-pop">
+						<a class="list-a" href="/sns/board"><i class="icon-my"></i>我的研趣</a>
+						<a class="list-a a-line" href="/letter/index"><i class="icon-letter"></i>我的私信</a>
+						<a class="list-a" href="/sns/follow"><i class="icon-follows"></i>我关注的人</a>
+						<a class="list-a" href="/sns/followboard"><i class="icon-increate"></i>我关注的画板</a>
+						<a class="list-a a-line" href="/sns/fans"><i class="icon-fans"></i>我的粉丝</a>
+						<a class="list-a mfp-pop" href="/user/setting"><i class="icon-setting"></i>账户设置</a>
+						<a class="list-a" href="/user/logout"><i class="icon-logout"></i>退出登录</a>
+					</div>
+				</div>
+            </li>
+            <li id="msg" class="msg-have-load">
+            	<i class="icon-alarm user-hover" title="信息"></i>
+				<div class="user-pop-wrap long-pop">
+					<span class="pop-head-top"><i class="icon-top"></i></span>
+					<div class="user-pop" id="msg-pop">
+						 <h4 class="msg-head">消息</h4>
+						 <div id="msg-wrap"><p class="empty-msg">亲，你还没有消息</p></div>
+					</div>
+				</div>
+            </li>
+            <li id="add"><i class="icon-plus user-hover" title="添加"></i>
+				<div class="user-pop-wrap">
+					<span class="pop-head-top"><i class="icon-top"></i></span>
+					<div class="user-pop">
+						<a class="list-a mfp-pop" href="/user/addpin"><i class="icon-upload"></i>上传图表</a>
+						<a class="list-a mfp-pop" href="/user/addboard"><i class="icon-increate"></i>添加画板</a>
+					</div>
+				</div>
+            </li>
+        </ul>
+        
+        <script type="text/javascript">
+			var u={"head_pic":"\/img\/user\/head\/default\/h\/head.png","name":"\u9648\u4fca","uid":"100385","email":"15989069487@163.com","intro":"","domain":"","msg_count":"0"};
+			$(function(){
+				$("#user-info").on("click","li",function(){
+					//$(this).toggleClass("li-click");
+				}).on("mouseover","li",function(e){
+					if(! $(this).hasClass("li-hover") ) 
+						$(this).addClass("li-hover");
+					if( $(this).attr("id") == "msg" && !$(this).hasClass("msg-have-load") && !$(this).hasClass("msg-has-read")) {
+						var $loading="<div id=\"msg-loading\"> <img src=\"/css/images/waiting.gif\"/></div>";
+						$.ajax({  
+							"type":"POST",  
+							"url":"/sns/msg",
+							"dataType":"json",
+							"beforeSend":function (XMLHttpRequest){ 
+								$("#msg-wrap").html($loading);   
+							},  
+							"success":function(e){
+								if( e.state==1 ){
+									$("#msg-wrap").html( msgHtml(e.msg) );
+								}else $("#msg-wrap").html( "<p class=\"empty-msg\">亲，你还没有消息</p>");
+								
+							}
+						});
+						$(this).addClass("msg-have-load");
+					}
+				}).on("mouseleave","li",function(){
+					$(this).removeClass("li-hover");
+				}).on("click",".icon-msg-delete",function(){
+					//delete msg
+					var $this=$(this).closest("dd");
+					$.post(
+						"/sns/msgdelete",
+						{id:$this.attr("id")},
+						function(e){
+							if(e.state==1)
+							//动画删除
+							$this.slideUp(500,function(){ $this.remove(); });
+							else alert( e.msg );
+					},"json");
+				}).on("click",".msg-set-read",function(){
+					//all set have read
+					$.post(
+						"/sns/msgdelete",
+						{set_read:"all"},
+						function(e){
+							if(e.state==1){
+								$("#msg .user-pop-wrap").hide();
+								$("#msg").addClass("msg-has-read");
+								$("#msg .icon-alarm b").remove();
+							}else alert( e.msg );
+					},"json");
+				});
+				$(".mfp-pop").magnificPopup({
+					type: "iframe",
+					preloader: false
+				});
+				
+			});
+			
+			function msgHtml(e){
+				if( isEmptyObject(e) ) return '<p class="empty-msg">亲，你还没有消息</p>';
+				var $h="<dl>";
+				for(var i in e) {
+						$h+='<dd id="'+e[i].id+'"><span class="msg-name">'+typeToName(e[i].type)+'</span>';
+						$h+='<p class="msg-body"><a href="/user/index/'+e[i].fid+'" class="msg-u">';
+						$h+='<img src="'+e[i].head_pic+'"/>'+e[i].name+'</a>';
+						$h+=typeToName(e[i].type)+'<a href="'+e[i].url+'" target="_blank">'+e[i].msg+'</a>';
+						$h+='<em class="msg-time">'+comptime(e[i].create_time)+'</em></p>';
+						$h+='<i class="icon-msg-delete" title="删除这条消息"></i></dd>';
+				}
+				$h+='<dt class="msg-end"><span class="msg-more"><a href="/sns/msg" >查看更多</a></span><span class="msg-set-read"><a href="#">全部设为已读</a></span></dt></dl>';
+				return $h;
+			}
+			function typeToName(type){
+				switch(type){
+					case "1": return "点赞";
+					case "2": return "反对";
+					case "3": return "收藏";
+					case "4": return "分享";
+					case "5": return "评论";
+				}
+			}
+			
+			function comptime(beginTime){
+				var nowTime=new Date().getTime(); 
+				var secondNum = parseInt((nowTime-beginTime*1000)/1000);	//计算时间戳差值   
+			   
+				if(secondNum>=0&&secondNum<60){
+					return secondNum+"秒前";
+				}
+				else if (secondNum>=60&&secondNum<3600){
+					var nTime=parseInt(secondNum/60);
+					return nTime+"分钟前";
+				}
+				else if (secondNum>=3600&&secondNum<3600*24){
+					var nTime=parseInt(secondNum/3600);
+					return nTime+"小时前";
+				}
+				else{
+					var nTime = parseInt(secondNum/86400);
+					return nTime+"天前";
+				}
+			
+			}
+			
+			function isEmptyObject(obj){
+				for(var n in obj){return false} 
+				return true; 
+			} 
+
+		</script>
+		
+                    </div>
+    
+</div>
+<div id="head-box" data-tips="占位"></div>
+
+<div id="menu-group">
+	<p class="auto-margin auto-width head-tips" style="width: 1262px;">首个数据可视化研究和分享的专业平台</p>
+</div>
+
+ <div id="container">
+		<style>
+    ul.yiiPager .first, ul.yiiPager .last {
+        display: inline;
+    }
+    .grid-view .summary {
+        display: none;
+    }
+    .grid-view table.items td {
+        text-align: center;
+    }
+    .grid-view .button-column {
+        width: auto;
+    }
+</style>
+<div id="main-wrap" class="course-body">
+    <div class="h20"></div>
+
+    <!--头部-->
+<div class="h20"></div>
+	<div class="top-box">
+    	<div class="p20">
+            <div class="logo"><img src="/js/umeditor/php/upload/20150724/14377268003633.jpg" alt="第一堂课"></div>
+            <div class="mid">
+                <h2 class="title">
+                    第一堂课                </h2>
+<div class="subtitle">这是我的第一堂课 </div>
+<div class="score">
+    <i class="icon-star-full"></i>&nbsp;<i class="icon-star-full"></i>&nbsp;<i class="icon-star-full"></i>&nbsp;<i class="icon-star-half"></i>&nbsp;<i class="icon-star-empty"></i>&nbsp;    <span>(3人评分)</span>
+</div>
+<div class="join-btn">
+            <a class="btn_study join-course" href="javascript:void(0)" data-id="1">退出学习</a>
+        &nbsp;&nbsp;
+    <a class="btn2 check-login mfp-pop" href="/course/create">创建课堂</a>
+</div>
+<div class="price">课程免费</div>
+</div>
+<div class="right">
+    <ul>
+        <li> 类别：数据分析</li>
+        <li> 开设：2015-07-31</li>
+        <li> 到期：2015-11-08</li>
+        <li> 状态：开课中</li>
+        <li> 学员：<span id="stu-num">4</span> 人</li>
+    </ul>
+</div>
+<div class="clear"></div>
+</div>
+
+<div class="quan_menu">
+    <ul>
+        <li>
+            <a href="/course/index/1">
+                <i class="icon icon-book"></i> 课时列表</a>
+        </li>
+        <li>
+            <a href="/course/info/1">
+                <i class="icon icon-info"></i> 课堂简介</a>
+        </li>
+        <li>
+            <a href="/course/comments/1">
+                <i class="icon icon-bubbles4"></i> 学员评价</a>
+        </li>
+        <li>
+            <a href="/course/notes/1">
+                <i class="icon icon-edit"></i> 课堂笔记</a>
+        </li>
+        <li>
+            <a href="/course/students/1">
+                <i class="icon icon-users"></i> 课堂学员</a>
+        </li>
+                <div class="clear"></div>
+    </ul>
+</div>
+
+</div>
+
+<script>
+    $(function(){
+        $('.join-course').on('click',function(){
+            if( !u.uid ) { alert( '请先登录'); return false;}
+            var courseId = $(this).attr('data-id');
+            $.getJSON('/course/join',{id:courseId},function(result){
+                if( result.status == 1 ) location.reload();
+                else alert( result.msg );
+            });
+        });
+    });
+</script>
+
+    <!--课时管理-->
+    <div class="main-box">
+        <div class="tab admin_tab">
+            <span><a href="/courseAdmin/index/1">基本信息</a></span>
+            <span class="sel"><a href="/courseAdmin/lessons/1">课时管理</a></span>
+            <span><a href="/courseAdmin/price/1">价格设置</a></span>
+            <span><a href="/courseAdmin/students/1">学员管理</a></span>
+            <span><a href="/courseAdmin/notices/1">公告管理</a></span>
+        </div>
+        <div class="admin-lesson-list">
+            <div id="yw0" class="grid-view">
+<div class="summary">第 1-3 条, 共 4 条.</div>
+<table class="items">
+<thead>
+<tr>
+<th class="button-column" id="yw0_c0">顺序</th><th class="checkbox-column" id="yw0_c1">&nbsp;</th><th id="yw0_c2">课时编号</th><th id="yw0_c3">课时名称</th><th id="yw0_c4">免费</th><th id="yw0_c5">类型</th><th id="yw0_c6">发布</th><th id="yw0_c7">已学学员</th><th class="button-column" id="yw0_c8">操作</th></tr>
+</thead>
+<tbody id="sortable">
+<tr class="odd selector" id="list_1">
+<td class="button-column"><a class="icon-move" title="拖动可改变顺序" href="#"></a></td><td class="checkbox-column"><input class="select-on-check" value="1" id="yw0_c1_0" type="checkbox" name="yw0_c1[]"></td><td>1</td><td>第一个视频课程</td><td>是</td><td>视频</td><td>是</td><td>1</td><td class="button-column"><a class="" title="发布课程" href="#">发布</a> <a class="view" title="查看" href="/lesson/learn?cid=1&amp;lid=1"><img src="/assets/4e205181/gridview/view.png" alt="查看"></a> <a class="update" title="更新" href="/courseAdmin/update/1"><img src="/assets/4e205181/gridview/update.png" alt="更新"></a> <a class="delete" title="删除" href="/courseAdmin/delete/1"><img src="/assets/4e205181/gridview/delete.png" alt="删除"></a></td></tr>
+<tr class="even selector" id="list_2">
+<td class="button-column"><a class="icon-move" title="拖动可改变顺序" href="#"></a></td><td class="checkbox-column"><input class="select-on-check" value="2" id="yw0_c1_1" type="checkbox" name="yw0_c1[]"></td><td>2</td><td>叫你如何骂人</td><td>否</td><td>图文</td><td>是</td><td>0</td><td class="button-column"><a class="" title="发布课程" href="#">发布</a> <a class="view" title="查看" href="/lesson/learn?cid=1&amp;lid=2"><img src="/assets/4e205181/gridview/view.png" alt="查看"></a> <a class="update" title="更新" href="/courseAdmin/update/2"><img src="/assets/4e205181/gridview/update.png" alt="更新"></a> <a class="delete" title="删除" href="/courseAdmin/delete/2"><img src="/assets/4e205181/gridview/delete.png" alt="删除"></a></td></tr>
+<tr class="odd selector" id="list_3">
+<td class="button-column"><a class="icon-move" title="拖动可改变顺序" href="#"></a></td><td class="checkbox-column"><input class="select-on-check" value="4" id="yw0_c1_2" type="checkbox" name="yw0_c1[]"></td><td>3</td><td>节里的课时</td><td>否</td><td>图文</td><td>否</td><td>0</td><td class="button-column"><a class="" title="发布课程" href="#">发布</a> <a class="view" title="查看" href="/lesson/learn?cid=1&amp;lid=4"><img src="/assets/4e205181/gridview/view.png" alt="查看"></a> <a class="update" title="更新" href="/courseAdmin/update/4"><img src="/assets/4e205181/gridview/update.png" alt="更新"></a> <a class="delete" title="删除" href="/courseAdmin/delete/4"><img src="/assets/4e205181/gridview/delete.png" alt="删除"></a></td></tr>
+</tbody>
+</table>
+<div class="pager"><ul id="yw1" class="yiiPager"><li class="first hidden"><a href="/courseAdmin/lessons/1?1=">首页</a></li>
+<li class="previous hidden"><a href="/courseAdmin/lessons/1?1=">上一页</a></li>
+<li class="page selected"><a href="/courseAdmin/lessons/1?1=">1</a></li>
+<li class="page"><a href="/courseAdmin/lessons/1?1=&amp;TblCourseLesson_page=2">2</a></li>
+<li class="next"><a href="/courseAdmin/lessons/1?1=&amp;TblCourseLesson_page=2">下一页</a></li>
+<li class="last"><a href="/courseAdmin/lessons/1?1=&amp;TblCourseLesson_page=2">末页</a></li></ul></div><div class="keys" style="display:none" title="/courseAdmin/lessons/1?1="><span>1</span><span>2</span><span>4</span></div>
+</div><!--            <ul id="ids-select">-->
+<!--                <li class="info">-->
+<!--                    <span class="act">操作</span>-->
+<!--                    <span class="time">创建时间</span>-->
+<!--                    <span class="r80">免费课时</span>-->
+<!--                    <span class="r80">状态</span>-->
+<!--                    <span class="r80">类型</span>-->
+<!--                    <span class="sortable">顺序</span>-->
+<!--                    <span class="checkbox"><input type="checkbox" name="selectAll" value="全选" /></span>-->
+<!--                    <span class="tit">课时标题</span>-->
+<!--                </li>-->
+<!---->
+<!--                --><!--                    <li>-->
+<!--                        <span class="act">-->
+<!--                            <a href="/lesson/publish/--><!--" class="publish-course">--><!--</a>-->
+<!--                            <a href="/lesson/alter/--><!--" class="mfp-pop">编辑</a>-->
+<!--                            <a href="javascript:void(0);" class="G_sub_json" data-type="remove" data-id="--><!--" data-url="/lesson/manag">删除</a>-->
+<!--                        </span>-->
+<!--                        <span class="time">--><!--</span>-->
+<!--                        <span class="r80">--><!--</span>-->
+<!--                        <span class="r80">--><!--</span>-->
+<!--                        <span class="r80">--><!--</span>-->
+<!--                        <span class="sortable icon-move"></span>-->
+<!--                        <span class="checkbox"><input type="checkbox" name="ids[]" value="--><!--" /></span>-->
+<!--                        <span class="tit">-->
+<!--                            <a href="/lesson/learn/--><!--">-->
+<!--                                --><!--                            </a>-->
+<!--                        </span>-->
+<!---->
+<!--                    </li>-->
+<!--                --><!---->
+<!--            </ul>-->
+        </div>
+<!--        <div class="action_buttom">-->
+<!--            <div class="fl">-->
+<!--                <a href="javascript:void(0)" id="G_remoe_all" data-type="remove-all" data-url="/lesson/manage" class="btn-small">删除所选</a>-->
+<!--            </div>-->
+<!--            <div class="pagination fr">-->
+<!---->
+<!--                --><!--            </div>-->
+<!--            <div class="clear"></div>-->
+<!--        </div>-->
+    </div>
+</div>
+
+<script>
+    $(function(){
+
+        //$('.admin-lesson-list-list ul li:last').css('border-bottom','0');
+    });
+</script></div>
+
+      
+</div>
+
+<script type="text/javascript" src="/assets/4e205181/gridview/jquery.yiigridview.js"></script>
+<script type="text/javascript" src="/js/plugin/magnific/magnific-popup.min.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery(document).on('click','#yw0 a.icon-move',)
+jQuery(document).on('click','#yw0 a.',)
+jQuery(document).on('click','#yw0 a.delete',function() {
+	if(!confirm('确定要删除这条数据吗?')) return false;
+	var th = this,
+		afterDelete = function(){};
+	jQuery('#yw0').yiiGridView('update', {
+		type: 'POST',
+		url: jQuery(this).attr('href'),
+		success: function(data) {
+			jQuery('#yw0').yiiGridView('update');
+			afterDelete(th, true, data);
+		},
+		error: function(XHR) {
+			return afterDelete(th, false, XHR);
+		}
+	});
+	return false;
+});
+jQuery('#yw0').yiiGridView({'ajaxUpdate':false,'ajaxVar':'ajax','pagerClass':'pager','loadingClass':'grid-view-loading','filterClass':'filters','tableClass':'items','selectableRows':1,'enableHistory':false,'updateSelector':'{page}, {sort}','filterSelector':'{filter}','pageVar':'TblCourseLesson_page'});
+});
+/*]]>*/
+</script>
+
+
+
+<!-- 课时管理拖动 -->
+<script type="text/javascript">
+	$('#sortable').sortable({
+		cursor: "move",
+		items: "tr",
+		opacity: .6,
+		revert: 500,
+		update: function(e,ui){
+			var sorted = $( "#sortable" ).sortable( "serialize", { key: "sort" } );
+			alert(sorted)
+		}
+	});
+
+
+
+
+
+</script>
+
+
+</body></html>

@@ -15,9 +15,9 @@ label,summary{cursor:default;}
 a,button{cursor:pointer;}
 h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:normal;}
 del,ins,u,s,a,a:hover{text-decoration:none;}
-body,textarea,input,button,select,keygen,legend{font:12px/1.14 arial,simsun;color:#333;outline:0;}
+body,textarea,input,button,select,keygen,legend{font:12px/1.14 arial,simsun;color:#666;outline:0;}
 body{background:#fff;}
-a,a:hover{color:#333;}
+a,a:hover{color:#666;}
 .clearfix:after{
 	content: '';
 	display: block;;
@@ -118,8 +118,8 @@ a,a:hover{color:#333;}
 	width: 1240px;
 }
 .course-info{
-	width: 230px;
-	height: 287px;
+	width: 265px;
+	height: 276px;
 	overflow: hidden;
 	float: left;
     text-align: justify;
@@ -138,13 +138,14 @@ a,a:hover{color:#333;}
 	border-radius: 10px;
 }
 .hot-and-newest a.bgc-change{
-	background-color: #6AEE2E;
+	/*background-color: #6AEE2E;*/
+	color: #35b558;
 }
 .cs-info-img img{
 	width: 100%;
 	height: 123px;
-	transition: -webkit-transform 0.2s ease-in;
-	transition: transform 0.2s ease-in;
+	transition: -webkit-transform .6s ease-in;
+	transition: transform .6s ease-in;
 
 }
 .cs-info-img .play-icon{
@@ -172,7 +173,8 @@ a,a:hover{color:#333;}
 	margin: 10px 0;
 }
 .course-introduce{
-	height: 2.8em;
+	/*height: 2.8em;*/
+		height: 0;
 	line-height: 1.4em;
 	overflow: hidden;
 }
@@ -182,11 +184,11 @@ a,a:hover{color:#333;}
 	/*margin: 10px 0;*/
 }
 .course-duration{
-	float: left;
+	float: right;
 }
 .course-teacher,
 .course-stds{
-	float: right;
+	float: left;
 	height: 2.4em;
 	line-height: 2.4em;
 }
@@ -229,7 +231,8 @@ a,a:hover{color:#333;}
 		transform: scale(1.2);
 }
 .course-item-bgc{
-	background-color: #6AEE2E;
+	/*background-color: #6AEE2E;*/
+	    color: #35b558;
 }
 .course-type li{
 	padding: 5px 0px;
@@ -245,7 +248,7 @@ a,a:hover{color:#333;}
     position: absolute;
     width: 102px;
     height: 2px;
-    background-color: #6AEE2E;
+    background-color: #35b558;
     bottom: 1px;
     left: 0px;
 }
@@ -254,7 +257,7 @@ a,a:hover{color:#333;}
 	display: block;
 	width: 0;
 	border: 6px solid transparent;
-	border-bottom: 6px solid #6AEE2E;
+	border-bottom: 6px solid #35b558;
 	position: absolute;
 	left: 50%;
 	margin-left: -3px;
@@ -267,7 +270,7 @@ a,a:hover{color:#333;}
 }
 .course-introduce,
 .course-relative{
-	color: #808080;
+	color: #c6d0d8;
 }
 .course-duration{
 	line-height: 2.4em;

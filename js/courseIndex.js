@@ -17,24 +17,24 @@ $(function(){
 	$(".course-info").hover(function(){
 		
 		$(this).children('.cs-info-img').find('img').addClass('change-big');
-		$(this).children('.cs-info-img').children('.play-icon').stop().fadeIn(200);
+		$(this).children('.cs-info-img').children('.play-icon').stop().fadeIn(600);
 		$(this).children('.course-introduce').css({
 			"height":"auto",
-			"-webkit-transition": "height .2s ease",
-			"transition": "height .2s ease"
+			"-webkit-transition": "height .6s ease",
+			"transition": "height .6s ease"
 		});
-		$(this).children('.course-relative').find('.course-teacher').css("display","none").siblings('.course-stds').stop().slideDown(200);
-		$(this).children('.course-relative').find('.choose-more').stop().slideDown(200);
+		$(this).children('.course-relative').find('.course-teacher').css("display","none").siblings('.course-stds').stop().slideDown(600);
+		$(this).children('.course-relative').find('.choose-more').stop().slideDown(600);
 	},function(){
 		$(this).children('.cs-info-img').find('img').removeClass('change-big');
-		$(this).children('.cs-info-img').children('.play-icon').stop().fadeOut(200);
+		$(this).children('.cs-info-img').children('.play-icon').stop().fadeOut(600);
 		$(this).children('.course-introduce').css({
 			"height":+ csIntroH + "px",
-			"-webkit-transition": "height .2s ease",
-			"transition": "height .2s ease"
+			"-webkit-transition": "height .6s ease",
+			"transition": "height .6s ease"
 		});
-		$(this).children('.course-relative').find('.course-teacher').stop().slideDown(200).siblings('.course-stds').css("display","none");
-		$(this).children('.course-relative').find('.choose-more').stop().slideUp(200);
+		$(this).children('.course-relative').find('.course-teacher').stop().slideDown(600).siblings('.course-stds').css("display","none");
+		$(this).children('.course-relative').find('.choose-more').stop().slideUp(600);
 	});
 	
 	//菜单切换

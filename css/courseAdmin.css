@@ -1,0 +1,86 @@
+/*鍩烘湰淇℃伅绠＄悊*/
+.course-info {position: relative}
+.course-info table {margin-top:20px !important;}
+.course-info table.detail-view tr,.grid-view table.items tr { height: 35px;}
+.course-info table.detail-view th, .course-info table.detail-view td { vertical-align: middle !important; }
+.course-info .cover {position:absolute; top:0; right:0;height: 180px; background-color: #fff;padding:0 20px}
+.course-info .cover img {height: 150px; width: 250px; border: 1px #ccc solid; padding: 4px;}
+.buttom-btn {margin-top: 30px; text-align: center}
+/*璇炬椂绠＄悊*/
+.admin-lesson-list ul li{padding: 10px 0;border-bottom: 1px solid #eee;}
+.admin-lesson-list ul li.info{padding-bottom:5px;}
+.admin-lesson-list ul li:not(.info) {font-size: 13px}
+.admin-lesson-list ul li span{display:inline-block;}
+.admin-lesson-list ul li span.sortable{width:30px;text-align: center;}
+.admin-lesson-list ul li span.checkbox{width:30px;}
+.admin-lesson-list ul li span.tit{}
+.admin-lesson-list ul li span.r80{width: 80px;display: inline-block;text-align: center;float:right;}
+.admin-lesson-list ul li span.time{ float:right; width:190px; text-align:center;}
+.admin-lesson-list ul li span.act{ float:right; width:120px; text-align:center;}
+.action_buttom{margin-top: 20px}
+
+/*浼氬憳绠＄悊*/
+.admin-user-list ul li{padding-top:10px; padding-bottom:10px;border-bottom:1px #eee solid; height:60px; clear:both;}
+.admin-user-list ul li span.avatar{width:50px; height:50px; margin-right:15px; margin-top:5px;float:left; display:block;}
+.admin-user-list ul li span.avatar img{width:50px;  height:50px; border-radius: 50%}
+.admin-user-list ul li span.mid{width:320px; float:left; display:block;}
+.admin-user-list ul li span.mid h4{margin:0; padding:0; font-weight:100; padding-bottom:4px; padding-top:2px;}
+.admin-user-list ul li span.mid p{ margin:0; padding:0; font-size:13px; line-height:20px; color:#333;}
+.admin-user-list ul li span.mid p a{color:#333;}
+.admin-user-list ul li span.mid p a:hover{text-decoration:underline;}
+.admin-user-list ul li span.right{display:none; float:right;width:72px;margin-top:-5px;}
+.admin-user-list ul li span.right a{margin-top:5px;}
+.admin-user-list ul li:hover span.right{display:block;}
+/*鍒嗛〉*/
+.pagination{display:block;}
+.pagination li{ float:left; padding:0 6px; font-size: 12px }
+.pagination .selected a {color: #3366cc;}
+/*杩涘害鏉�*/
+.progress {
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 15px;
+    padding: 0 15px;
+    width: 220px;
+    height: 34px;
+    background: #d7e0f4;
+    border-radius: 17px;
+    background-image: -webkit-linear-gradient(top, #ebecef, #ccd5dd);
+    background-image: -moz-linear-gradient(top, #ebecef, #ccd5dd);
+    background-image: -o-linear-gradient(top, #ebecef, #ccd5dd);
+    background-image: linear-gradient(to bottom, #ebecef, #ccd5dd);
+    /*-webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.8), 0 2px 4px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 0 6px #b6babe, 0 7px rgba(255, 255, 255, 0.1);*/
+    /*box-shadow: inset 0 1px rgba(255, 255, 255, 0.8), 0 2px 4px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 0 6px #b6babe, 0 7px rgba(255, 255, 255, 0.1);*/
+}
+.progress-val {
+    float: right;
+    margin-left: 15px;
+    font: bold 15px/34px Helvetica, Arial, sans-serif;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.6);
+}
+.progress-bar {
+    display: block;
+    overflow: hidden;
+    height: 8px;
+    margin: 13px 0;
+    background: #b8b8b8;
+    border-radius: 4px;
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2), transparent 60%);
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.2), transparent 60%);
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.2), transparent 60%);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), transparent 60%);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.6);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.6);
+}
+.progress-in {
+    display: block;
+    height: 8px;
+    background: #1997e6;
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 60%, rgba(0, 0, 0, 0) 61%, rgba(0, 0, 0, 0.2)), -webkit-linear-gradient(left, #147cd6, #24c1fc);
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 60%, rgba(0, 0, 0, 0) 61%, rgba(0, 0, 0, 0.2)), -moz-linear-gradient(left, #147cd6, #24c1fc);
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 60%, rgba(0, 0, 0, 0) 61%, rgba(0, 0, 0, 0.2)), -o-linear-gradient(left, #147cd6, #24c1fc);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 60%, rgba(0, 0, 0, 0) 61%, rgba(0, 0, 0, 0.2)), linear-gradient(to right, #147cd6, #24c1fc);
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
