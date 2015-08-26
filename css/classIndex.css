@@ -118,8 +118,8 @@ a,a:hover{color:#666;}
 	width: 1240px;
 }
 .course-info{
-	width: 265px;
-	height: 276px;
+	width: 230px;
+	height: 230px;
 	overflow: hidden;
 	float: left;
     text-align: justify;
@@ -202,14 +202,16 @@ a,a:hover{color:#666;}
 	height: 420px;/*全部显示货值部分显示*/
 }
 .banner .dots>li{
-	width: 40px;
-	height: 40px;
+	width: 20px;
+	height: 20px;
 	border-radius: 50%;
 	background-color: #abc;
 	cursor: pointer;
+	opacity: .5;
 }
 .dots li:hover{
-	/*background-color: #f60;*/
+	opacity: 1;
+	background-color: #AF673B;
 }
 .banner .dots .active{
 	background: #f60;
@@ -249,7 +251,7 @@ a,a:hover{color:#666;}
     width: 102px;
     height: 2px;
     background-color: #35b558;
-    bottom: 1px;
+    	bottom: 1px;
     left: 0px;
 }
 .bordr-line:after{
@@ -282,8 +284,8 @@ a,a:hover{color:#666;}
 	line-height: 2em;
 }
 .course-teacher img{
-	width: 2.4em;
-	height: 2.4em;
+	width: 2em;
+	height: 2em;
 	border-radius: 50%;
 	vertical-align: middle;
 }
@@ -307,4 +309,116 @@ a,a:hover{color:#666;}
 	padding: 9px 120px;
 	border-radius: 5px;
 	border: 1px solid #CDCDCD;
+}
+.load-more a:hover{
+	color: #35b558;
+}
+.load-more a:after{
+	content: ">";
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+	font-size: 19px;
+	display: inline-block;
+	margin-left: 10px;
+
+}
+.consulting{
+	margin-top: 30px;
+}
+
+.consulting .jiangshi-or-jigou{
+	overflow: hidden;
+	margin: 20px 0;
+}
+.jiangshi-or-jigou h3{
+	float: left;
+	font-size: 20px;
+}
+.jiangshi-or-jigou a{
+	float: right;
+}
+.jiangshi-or-jigou a:after {
+    content: ">";
+    display: inline-block;
+    font-size: 14px;
+}
+.jiangshi-or-jigou a:hover{
+	color: #35B558;
+}
+.consult-wrap{
+	overflow: hidden;
+    width: 1200px;
+}
+.js-info{
+	margin: 10px;
+}
+.js-pic{
+	width: 180px;
+}
+.js-pic img{
+	width: 180px;
+    height: 160px;
+}
+.consult-list{
+	width: 180px;
+	height: 250px;
+	margin-right: 20px;
+	float: left;
+}
+.js-info>h4,
+.js-info>p{
+	text-align: center;
+	line-height: 16px;
+}
+
+/*banner上的site-data-main部分*/
+.site-data-main {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: rgba(255,255,255,.2);
+}
+.site-data-main p{
+	margin: 0 0 10 0;
+}
+.site-data-main .student-num{
+	padding: 30px 40px 15px 40px;
+}
+.site-data-main .student-num span{
+	width: 59px;
+	height: 88px;
+	text-align: center;
+	display: inline-block;
+	margin-right: 5px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	background-color: #fff;
+	color: #fd9271;
+	font-size: 64px;
+	font-weight: normal;
+}
+.site-data-main .cut-off {
+    height: 1px;
+    background-color: rgba(255,255,255,0.2);
+}
+.site-data-main .join-study {
+    padding: 15px 40px;
+}
+.site-data-main .join-study>p>span{
+	font-size: 20px;
+	margin: 0 5px;
+	color: #fd9271;
+}
+.jion-study-btn{
+	margin-top: 12px;
+	background-color: #fd9271;
+	color: #fff;
+	padding: 12px 82px;
+	font-size: 14px;
+	text-align: center;
+	display: block;
 }

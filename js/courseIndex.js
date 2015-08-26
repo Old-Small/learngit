@@ -38,11 +38,11 @@ $(function(){
 	});
 	
 	//菜单切换
-	$('.course-type li').hover(function(){
+	/*$('.course-type li').hover(function(){ //让指示线从低往上弹出来的效果没有实现
 		var liIndex = $(this).index();
-		var newLine = $('<div class="bordr-line"></div>');
+		// var newLine = $('<div class="bordr-line"></div>');
 		var newLineLeft = $('.course-type li').eq(0).width();
-		var newLineLeftPadding = $('.course-type li');
+		// var newLineLeftPadding = $('.course-type li');
 		// alert(newLineLeft);
 		$('.course-type').children('.bordr-line').remove();
 		$('.course-type').append(newLine);
@@ -64,5 +64,19 @@ $(function(){
 				"transition":"bottom .2s ease"
 			});
 		}
+	});*/
+	$('.course-type li').mouseover(function(){
+		var liIndex = $(this).index();
+		var newLineLeft = $('.course-type li').eq(0).width();
+		$('.bordr-line').css({
+			"left": newLineLeft * liIndex + "px",
+			"-webkit-transition":"left .2s ease",
+			"transition":"left .2s ease, opacity"
+		});
+		$(this).addClass('course-item-bgc').siblings().removeClass('course-item-bgc');
 	});
+
 });
+
+
+	
