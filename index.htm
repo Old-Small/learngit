@@ -178,43 +178,54 @@
   </div>
  -->
     <div class="banner" id="banner-id">
-      <div class="banner-wth980">
-        <div class="banner-cont banner">
-          <ul class="banner-pic-wrap" id="banner-pic-cont">
-            <li class="tuijian" ><a href="###"><img id="tuijian1" src="img/p1.jpg" alt="推荐课程1"></a>推荐1</li>
-            <li class="tuijian" ><a href="###"><img id="tuijian2" src="img/p2.jpg" alt="推荐课程2"></a>推荐2</li>
-            <li class="tuijian" ><a href="###"><img id="tuijian3" src="img/p3.jpg" alt="推荐课程3"></a>推荐3</li>
+          <ul class="banner-pic-wrap " id="banner-pic-cont">
+            <li class="tuijian bgc-tuijian1 tuijian-show" >
+              <div class="tj-container ">
+                <a href="###"><img id="tuijian1" src="img/p1.jpg" alt="推荐课程1"></a>推荐1
+              </div>
+            </li>
+            <li class="tuijian bgc-tuijian2" >
+            <div class="tj-container">
+              <a href="###"><img id="tuijian2" src="img/p2.jpg" alt="推荐课程2"></a>推荐2
+            </div>
+          </li>
+            <li class="tuijian bgc-tuijian3" >
+              <div class="tj-container">
+                <a href="###"><img id="tuijian3" src="img/p3.jpg" alt="推荐课程3"></a>推荐3
+              </div>
+            </li>
           </ul>
 
           
 
-        <!--  <div class="tab-icon">
+        <div class="tab-icon">
           <a class="curr"></a>
           <a class=""></a>
           <a class=""></a>
-        </div> -->
+        </div>
           <a href="#" class="left-btn unslider-arrow prev" id="left-btn" title="向后"></a>
           <a href="#" class="right-btn unslider-arrow next" id="right-btn" title="向前"></a>
-          <div class="site-data-main">
-            <div class="student-num">
-              <p>现在</p> 
-              <p id="onlineNum" data-url="">
-                  <span>5</span><span>0</span><span>2</span><span>4</span>人</p>
-              <p>正在学习课程</p> 
-            </div>
-            <div class="cut-off"></div>
-            <div class="join-study">
-              <p>过去24小时共<span>4950</span>人登录学习</p>
-              <p>
-                <a class="jion-study-btn" href="">
-                  <i class=""></i>加入学习
-                </a>
-              </p>
+          <div class="site-data">
+            <div class="sd-container">
+              <div class="site-data-main">
+                <div class="student-num">
+                  <p>现在</p> 
+                  <p id="onlineNum" data-url="">
+                      <span>5</span><span>0</span><span>2</span><span>4</span>人</p>
+                  <p>正在学习课程</p> 
+                </div>
+                <div class="cut-off"></div>
+                <div class="join-study">
+                  <p>过去24小时共<span>4950</span>人登录学习</p>
+                  <p>
+                    <a class="jion-study-btn" href="">
+                      <i class=""></i>加入学习
+                    </a>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        
-      </div>
     </div>
     
     <div class="cont">
@@ -576,21 +587,54 @@
     </div>
   <script src="js/jquery-1.11.3.js"></script>
   <script src="js/courseIndex.js"></script>
-  <script src="js/unslider.js"></script>
   <script >
-    $(function() { 
-        $('.banner').unslider({
-          dots: true,
-          fluid: true,  //false支持响应式
-          // arrow : false
-        });
-        
-        /*$('.unslider-arrow').click(function() {
-          var unslider = $('.banner').unslider();
-          var fn = this.className.split(' ')[1];
-          unslider.data('unslider')[fn]();
-        });*/
+    //轮播图
+    var timer = null,
+        num = -1,
+        zIndex = 0,
+        myFn = function(){
+          if (num === $('#banner-pic-cont li').length-1) { num = -1;zIndex = 0;}
+          num++;
+          zIndex++;
+          console.log(num , zIndex);
+          $('.tuijian').eq(zIndex).css({"display":"block","left":"100%"})
+            .stop()
+            .animate({"left":"0"},500)
+            .siblings().stop()
+            .animate({"right":"100%"},500
+            ,function(){
+            $(this).css({
+            "display":"none"
+            })
+         });
+          $('.tab-icon a').eq(zIndex).addClass('curr').siblings().removeClass('curr');
+        }
+    $('.tab-icon a').mouseover(function(){
+      var zIndex = $(this).index();
+      num = zIndex;
+      $(this).addClass('curr').siblings().removeClass('curr');
+      $('.tuijian').eq(zIndex).css({
+        "display":"block",
+        "left":"100%"
+      }).stop()
+      .animate({"left":"0"},500)
+      .siblings().stop()
+      .animate({"right":"100%"},500
+      ,function(){
+        $(this).css({
+          "display":"none"
+        })
+      });
     });
+
+    timer = setInterval(myFn,2000);
+
+    $('#banner-pic-cont,.site-data,.tab-icon').hover(function(){
+      // timer = null;
+      clearInterval(timer);
+    },function(){
+      timer = setInterval(myFn,2000);
+    })
   </script>
 </body>
 </html>
